@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Men’s Concierge Services</title>
+  <link rel="stylesheet" href="https://unpkg.com/purecss@3.0.0/build/pure-min.css" />
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f6f6f6;
+      margin: 0;
+      padding: 0;
+      color: #222;
+    }
+
+    header {
+      background: #111;
+      color: #fff;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    header h1 {
+      font-size: 2.4em;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.1em;
+      color: #ccc;
+    }
+
+    .cta-button {
+      background: #fff;
+      color: #111;
+      border: none;
+      padding: 12px 25px;
+      font-size: 1rem;
+      border-radius: 4px;
+      margin-top: 20px;
+      cursor: pointer;
+    }
+
+    .cta-button:hover {
+      background-color: #ddd;
+    }
+
+    .content {
+      padding: 40px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .value-prop, .about, .faq, .testimonials {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .service-card {
+      background: #fff;
+      padding: 25px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      width: 100%;
+      max-width: 300px;
+    }
+
+    .service-card h3 {
+      margin-top: 0;
+    }
+
+    .about img {
+      max-width: 150px;
+      border-radius: 50%;
+      margin-bottom: 20px;
+    }
+
+    .testimonial-block {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      margin-top: 30px;
+    }
+
+    .testimonial {
+      background: #fff;
+      padding: 20px;
+      border-left: 5px solid #000;
+      text-align: left;
+      box-shadow: 0 1px 6px rgba(0,0,0,0.05);
+      border-radius: 6px;
+    }
+
+    .testimonial cite {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    .faq details {
+      background: #fff;
+      padding: 15px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      box-shadow: 0 1px 6px rgba(0,0,0,0.05);
+      text-align: left;
+    }
+
+    .footer-cta {
+      background: #111;
+      color: #fff;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    footer {
+      background: #000;
+      color: #888;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.8em;
+      }
+
+      .footer-cta h2 {
+        font-size: 1.4em;
+      }
+
+      .service-card {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HERO -->
+  <header>
+    <h1>Elevate Your Lifestyle</h1>
+    <p>Men’s Concierge Services: Style, Events, Wardrobe Mastery</p>
+    <button class="cta-button" onclick="scrollToSection()">Book Your Free Consultation</button>
+  </header>
+
+  <div class="content">
+    <!-- VALUE PROP -->
+    <div class="value-prop">
+      <h2>Confidence Starts with Presentation</h2>
+      <p>We simplify your life by refining your style and managing the details so you can focus on what matters.</p>
+    </div>
+
+    <!-- SERVICES -->
+    <div class="services">
+      <div class="service-card">
+        <h3>👔 Personal Shopping</h3>
+        <p>Tailored shopping experiences for wardrobe, accessories, and grooming — curated for your lifestyle.</p>
+      </div>
+      <div class="service-card">
+        <h3>🧳 Wardrobe Audits</h3>
+        <p>Declutter, organize, and elevate your closet. Less clutter, more confidence.</p>
+      </div>
+      <div class="service-card">
+        <h3>🧵 Custom Tailoring</h3>
+        <p>Get a precise fit with luxury tailors. We handle the appointments and the follow-up.</p>
+      </div>
+      <div class="service-card">
+        <h3>🎉 Event Planning</h3>
+        <p>Private dinners, client soirées, or bachelor weekends — executed flawlessly from concept to clean-up.</p>
+      </div>
+    </div>
+
+    <!-- ABOUT ME -->
+    <div class="about">
+      <img src="https://via.placeholder.com/150" alt="Your photo">
+      <h2>About Me</h2>
+      <p>Hi, I'm Alex — your personal concierge. With over 10 years in men’s style, event coordination, and lifestyle design, I help ambitious men live better, dress better, and make lasting impressions. Whether it’s revamping your wardrobe or planning a night to remember, I handle the details so you can lead with confidence.</p>
+    </div>
+
+    <!-- TESTIMONIALS -->
+    <div class="testimonials">
+      <h2>What Clients Say</h2>
+      <div class="testimonial-block">
+        <div class="testimonial">
+          “Alex transformed my look and helped me host an event that blew away my clients. Absolutely seamless.”
+          <cite>— David M., Chicago</cite>
+        </div>
+        <div class="testimonial">
+          “The wardrobe audit was eye-opening. Now I actually enjoy getting dressed — and I get compliments constantly.”
+          <cite>— Leo P., Miami</cite>
+        </div>
+        <div class="testimonial">
+          “I used to stress over what to wear or how to plan. Now I just call Alex. He makes it effortless.”
+          <cite>— Sean R., San Francisco</cite>
+        </div>
+      </div>
+    </div>
+
+    <!-- FAQ -->
+    <section class="faq">
+      <h2>Frequently Asked Questions</h2>
+      <details>
+        <summary>What’s included in a wardrobe audit?</summary>
+        <p>We assess your entire wardrobe, eliminate clutter, recommend key upgrades, and reorganize your closet for function and style.</p>
+      </details>
+      <details>
+        <summary>How do consultations work?</summary>
+        <p>You book a free 20-minute call where we clarify your goals and map out the best concierge services for you.</p>
+      </details>
+      <details>
+        <summary>Can I book just one service?</summary>
+        <p>Yes — all services are à la carte and completely tailored to your lifestyle and budget.</p>
+      </details>
+    </section>
+  </div>
+
+  <!-- FINAL CTA -->
+  <div class="footer-cta" id="consult">
+    <h2>Let’s Build Your Signature Look</h2>
+    <p>Start with a free 20-minute consultation — no pressure, just progress.</p>
+    <button class="cta-button" onclick="alert('Email us at info@mensconcierge.com or call 555-STYLE-ME')">Book Now</button>
+  </div>
+
+  <footer>
+    &copy; 2025 Men's Concierge. All rights reserved.
+  </footer>
+
+  <script>
+    function scrollToSection() {
+      document.getElementById("consult").scrollIntoView({ behavior: "smooth" });
+    }
+  </script>
+
+</body>
+</html>
