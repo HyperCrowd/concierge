@@ -77,10 +77,23 @@
       margin-top: 0;
     }
 
-    .about img {
-      max-width: 150px;
+    .zoom {
+      justify-self: center;
+      width: 200px;
+      height: 300px;
+      overflow: hidden;
       border-radius: 50%;
       margin-bottom: 20px;
+      margin-top: 20px;
+    }
+
+    .zoom img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      margin-top: 250px;
+      margin-left: -15px;
+      transform: scale(3); /* zoom in */
     }
 
     .testimonial-block {
@@ -182,7 +195,9 @@
 
     <!-- ABOUT ME -->
     <div class="about">
-      <img src="https://via.placeholder.com/150" alt="Your photo">
+      <div class="zoom">
+        <img src="self.jpeg" alt="Self">
+      </div>
       <h2>About Me</h2>
       <p>Hi, I'm Alex — your personal concierge. With over 10 years in men’s style, event coordination, and lifestyle design, I help ambitious men live better, dress better, and make lasting impressions. Whether it’s revamping your wardrobe or planning a night to remember, I handle the details so you can lead with confidence.</p>
     </div>
